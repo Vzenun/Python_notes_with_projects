@@ -2,6 +2,8 @@ from replit import clear
 from art import logo
 import random
 
+# 0 dictates that the player has a black jack
+
 def another_card(list,player_list):
     player_list.append(list[random.randint(0,12)])
 
@@ -25,7 +27,10 @@ def game(list):
     if(kol==21):
         display_pl(player_list,sol)
         print(f"Computer's first card: {dealer_list[0]}")
-        print(f"Your final hand: {player_list}, final score: {sol}")
+        if(sol<21):
+            print(f"Your final hand: {player_list}, final score: {sol}")
+        else:
+            print(f"Your final hand: {player_list}, final score: 0")
         print(f"Computer's final hand: {dealer_list}, final score: 0")
         print("You lose, opponent has blackjack.")
         game_start()
@@ -107,7 +112,7 @@ def game(list):
                 print("You lose.")
                 game_start()
             elif(kol>sol and kol==21):
-                print("You lose, with a blackjack")
+                print("You lose.")
                 game_start()
             elif(kol>sol and kol>21):
                 print("Opponent went over, you win the game")
