@@ -1,7 +1,7 @@
 #Randomisation and python lists
 
 import random    #random module in the python libraries
-import my_module
+
 print(random.randrange(2,6,3))  #it basically returns the random number of form 2=<2+3k<50
 
 print(random.randint(2,8))  #it basically returns the random number k such that 2=<k<=8
@@ -29,7 +29,7 @@ list.extend([1.44,2,3,4,5,6,7,9]) # add all the input list element to the end of
 
 list.insert(0,"dbhhvjhfv")# insert the element at a specific position
 list.remove(4)# remove first element of the list which is equal to 4
-a=list.remove(0) #remove the element at ith position in the list and return it
+a=list.pop(3) #remove the element at ith position in the list and return it
 
 list.clear() #remove all elements of the list
 del(list[:]) #remove all elements of the list

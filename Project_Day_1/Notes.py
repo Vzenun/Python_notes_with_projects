@@ -12,7 +12,7 @@ name_your="Vidur"
 
 #formatted string use
 print(f'How are you {name_your}')
-name=input("What is your name?")#this is how we are going to take as an input
+name=input("What is your name? ")#this is how we are going to take as an input
 print(f'Hello {name}')
 
 print("Hello "+input("What is your name?"))#In python by default input is taken as a string

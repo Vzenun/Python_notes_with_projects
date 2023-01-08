@@ -27,20 +27,24 @@ a=input("->")
 if a=="Left":
     pass
 if a=="Right":
-    print("Game Over")
+    print("  Game Over")
+    exit()
 print("You come to a lake. There is an island in the middle of the lake. Type \"Wait\" to wait for a boat. Type \"Swim\" to swim across.")
 b=input("->")
 if b=="Wait":
     pass
 if b=="Swim":
-    print("Game Over")
+    print("  Game Over")
+    exit()
 print("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour door did you choose:")
 c=input("->")
 if c=="Red":
     print("You have entered in the jungle and died!")
-    print("Game Over")
+    print("  Game Over")
+    exit()
 if c=="Blue":
     print("You have entered in to the room full of beasts and you died!")
-    print("Game Over")
+    print("  Game Over")
+    exit()
 if c=="Yellow":
     print("Hooray! You win the game.")

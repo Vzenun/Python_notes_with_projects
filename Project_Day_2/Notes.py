@@ -1,4 +1,5 @@
 #Data Types
+
 #String
 print("Hello"[0])#This method of pulling out characters from the string is also known as sub scripting
 print("Hello"[-1])
