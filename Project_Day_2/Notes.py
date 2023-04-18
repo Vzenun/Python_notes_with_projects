@@ -30,13 +30,14 @@ print("Your name has "+num_char+" characters.")
 #power
 print(2**3)
 #int() data type converter act as GIF fn.
-print(int(8/3))#this int data type converter would actually chop off everything that is after the decimal
+print(int(8/3)) #this int data type converter would actually chop off everything that is after the decimal
 
 #round how to do that
 print(round(8/3))#it would actually give 3
 print(round(8/3,2))#here if we want to round it upto certain precision we would actually use this.
 
 #floor division
+print(8/3)
 print(8//3)
 print(type(8//3))#it is int
 
